@@ -1,10 +1,87 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
 }
 
+
+/************************* START STICKY FOOTER ***************************/
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex: 1;
+}
+
+
+/******************************* END STICKY FOOTER **********************/
+
+body {
+    font-family: 'bilo', sans-serif;
+    background-color: mintcream;
+    color: lightcoral;
+}
+
+h1 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    padding-top: 1%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex li {
+    list-style-type: none;
+    background-color: mistyrose;
+    padding: 1%
+}
+
+main {
+    padding-left: 3%;
+}
+
+h2 {
+    padding-top: 3%;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+/************************* START 1000px MEDIA QUERY ***************************/
+
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+
+/************************* END 1000px MEDIA QUERY ***************************/
